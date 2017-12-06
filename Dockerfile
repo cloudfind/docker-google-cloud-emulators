@@ -1,3 +1,2 @@
 FROM google/cloud-sdk
-RUN gcloud --quiet components install beta cloud-datastore-emulator pubsub-emulator
-RUN apk --update add openjdk7-jre
+RUN apt-get install google-cloud-sdk google-cloud-sdk-datastore-emulator google-cloud-sdk-pubsub-emulator
